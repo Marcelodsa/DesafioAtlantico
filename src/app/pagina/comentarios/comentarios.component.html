@@ -1,0 +1,27 @@
+<div fxLayout="column" class="flex-box ">
+    <mat-card  class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title> {{postAtual.autor.name}} @{{postAtual.autor.username}}</mat-card-title>
+            <mat-card-subtitle>{{postAtual.title}}</mat-card-subtitle>
+        </mat-card-header>
+        
+        <mat-card-content>
+            <p>
+            {{postAtual.body}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card *ngFor="let comentario of comentarios" class="example-card">
+        <mat-card-header>
+            <mat-card-title> {{comentario.email}} </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+            {{comentario.body}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+
+</div>

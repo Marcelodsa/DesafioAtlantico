@@ -1,0 +1,18 @@
+<div fxLayout="column" class="flex-box ">
+    <mat-card *ngFor="let post of posts" class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{encontrarUsuario(post).name}} @{{encontrarUsuario(post).username}}  </mat-card-title>
+            <mat-card-subtitle>{{post.title}}</mat-card-subtitle>
+        </mat-card-header>
+        
+        <mat-card-content>
+            <p>
+            {{post.body}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button (click)="carregarPostComentarios(post)" mat-button>Comentarios</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
