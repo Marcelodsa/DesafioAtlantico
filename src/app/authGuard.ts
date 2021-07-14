@@ -1,4 +1,3 @@
-import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from "@angular/router";
 import { LocalStorageServico } from './servicos/localStorageServico';

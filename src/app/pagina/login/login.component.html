@@ -1,4 +1,5 @@
-<mat-card>
+<div class="container">
+  <mat-card class="card">
     <mat-card-header>
       <mat-card-title>Login</mat-card-title>
     </mat-card-header>
@@ -7,8 +8,8 @@
         <table class="example-full-width" cellspacing="0">
           <tr>
             <td>
-              <mat-form-field class="example-full-width">
-              <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+              <mat-form-field >
+              <input matInput placeholder="Usuario / E-mail" [(ngModel)]="username" name="username" required>
               </mat-form-field>
             </td>
           </tr>
@@ -20,3 +21,4 @@
       <button mat-stroked-button (click)="login()" color="primary">Login</button>
     </mat-card-actions>
   </mat-card>
+</div>

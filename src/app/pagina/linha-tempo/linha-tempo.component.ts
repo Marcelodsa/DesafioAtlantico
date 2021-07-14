@@ -42,10 +42,8 @@ export class LinhaTempoComponent implements OnInit {
     this.chamaApi().subscribe(response =>{
       this.posts = response;
       this.posts.sort(this.ordenarPosts);
-      //console.log(JSON.stringify(this.posts));
     
     }, err => {
-      //this.toastr.error("Erro!", "Não foi possível obter o histórico de imagens, falha ao se comunicar com o servidor", {progressBar : true});
       console.log(err);
     })
   }

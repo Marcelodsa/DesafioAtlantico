@@ -18,14 +18,14 @@ export class LoginComponent implements OnInit {
 
   username="";
   ngOnInit(): void {
-    this.carregarPosts();
+    this.carregarUsuarios();
   }
 
   chamaApi(): Observable<any>{
     return this.http.get<Usuario[]>("https://jsonplaceholder.typicode.com/users");
   }
 
-  carregarPosts(){
+  carregarUsuarios(){
     this.chamaApi().subscribe(response =>{
       this.usuarios = response;
       
@@ -38,7 +38,8 @@ export class LoginComponent implements OnInit {
   }
 
   login():void {
-    if(this.username == 'admin'){
+    let estaAutorizado =this.autorizarUsuario(this.username);
+    if(estaAutorizado){
       this.localStorageServico.set("usuarioAtual", this.username);
       this.usuarioServico.guardarUsuarios(this.usuarios);
       this.router.navigate(["linha-tempo"]);
@@ -47,6 +48,9 @@ export class LoginComponent implements OnInit {
     }
   }
 
-
+  autorizarUsuario(userName: string): boolean{
+    let user: Usuario = this.usuarios.filter(user => user.email == userName || user.username == userName)[0];
+    return user != undefined;
+  }
   
 }

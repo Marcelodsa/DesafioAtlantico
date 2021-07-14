@@ -1,3 +1,17 @@
+<nav class="navbar fixed menu mat-elevation-z6" *ngIf="mostrarNavbar()">
+  <div class="container">
+    <div class="navbar-item">
+      <a >
+        <img class="img" src="assets/imagens/icon_navbar.png">
+      </a>
+    </div>
+    
+    <button class="material-icons navbar-item button" (click)="logout()">
+      power_settings_new
+    </button>
+
+  </div>
+</nav>
 
 <body>
   <router-outlet></router-outlet>
