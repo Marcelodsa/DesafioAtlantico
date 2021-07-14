@@ -12,7 +12,9 @@ import { MatCardModule } from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { ComentariosComponent } from './pagina/comentarios/comentarios.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UsuarioServico } from './servicos/servicoUsuario';
@@ -35,6 +37,8 @@ import { LocalStorageServico } from './servicos/localStorageServico';
     FlexLayoutModule,
     MatInputModule,
     MatProgressSpinnerModule,
+    MatButtonModule,
+    MatSidenavModule,
     FormsModule,
     HttpClientModule
   ],

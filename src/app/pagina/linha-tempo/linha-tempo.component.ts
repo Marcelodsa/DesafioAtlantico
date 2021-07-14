@@ -16,6 +16,7 @@ import { Router } from '@angular/router';
 export class LinhaTempoComponent implements OnInit {
   posts : Posts[] = [];
   usuarios : Usuario[]= [];
+  showFiller = false;
  
   constructor(
     private http: HttpClient, 
