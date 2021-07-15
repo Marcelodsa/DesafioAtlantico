@@ -35,7 +35,7 @@ export class LinhaTempoComponent implements OnInit {
 
   encontrarUsuario(post: Posts): Usuario{
     let usuario:Usuario= this.usuarios.filter(user=>user.id == post.userId)[0];
-    return usuario;//usuario.name.concat(" @").concat(`${usuario.username}`);
+    return usuario;
   }
 
   carregarPosts(){

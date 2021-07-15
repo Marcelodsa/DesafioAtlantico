@@ -9,25 +9,15 @@
 }
 
 .flex-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 80px;
-    /*margin-top: 80px;*/
-}
-
-.content-box {
-text-align: center;
-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
 }
 
 .example-button-row button,
 .example-button-row a {
   margin-right: 8px;
-}
-
-.example-spacer {
-  flex: 1 1 auto;
 }
 
 button{

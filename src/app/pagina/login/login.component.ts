@@ -28,12 +28,8 @@ export class LoginComponent implements OnInit {
   carregarUsuarios(){
     this.chamaApi().subscribe(response =>{
       this.usuarios = response;
-      
-      //console.log(JSON.stringify(this.usuarios));
-    
     }, err => {
-      //this.toastr.error("Erro!", "Não foi possível obter o histórico de imagens, falha ao se comunicar com o servidor", {progressBar : true});
-      console.log("deu rim");
+      console.log(err);
     })
   }
 
@@ -52,5 +48,4 @@ export class LoginComponent implements OnInit {
     let user: Usuario = this.usuarios.filter(user => user.email == userName || user.username == userName)[0];
     return user != undefined;
   }
-  
 }

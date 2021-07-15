@@ -24,18 +24,14 @@ export class ComentariosComponent implements OnInit {
   }
 
   chamaApi(): Observable<any>{
-    
     return this.http.get<Comentarios[]>(`https://jsonplaceholder.typicode.com/comments?postId=${this.postAtual.id}`);
   }
 
   carregarComentarios(){
    this.chamaApi().subscribe(response =>{
       this.comentarios = response;
-      
     }, err => {
-      //this.toastr.error("Erro!", "Não foi possível obter o histórico de imagens, falha ao se comunicar com o servidor", {progressBar : true});
       console.log(err);
     })
   }
-
 }

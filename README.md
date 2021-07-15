@@ -1,27 +1,33 @@
-# AtlanticoSocial
+# Desafio Atlantico
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+Este projeto foi criado para a participação no processo seletivo do Instituto Atlantico. O desafio consistia em desenvolver uma aplicação que funcione como uma rede social para amigos permitindo visualizar as publicações de outros usuarios, incluindo as suas, e tambem visualizar todos os comentarios das publicações.
 
-## Development server
+## Estrutura do projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O projeta obtem os dados das publicações através de chamas de API para o JSONPlaceholder - Free Fake API.
 
-## Code scaffolding
+## Instalando dependencias do projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Primeiro deve-se instalar o +[Node](https://nodejs.org/en/) em sua máquina.
+Segundo deve-se instalar o +[Angular 12](https://angular.io), pode-se instalar através do comando
+'''
+npm install -g @angular/cli
+'''
+E por ultimo, apos ter baixado o projeto, caminha com o terminal ate a pasta do projeto e rode o comando
+'''
+npm i
+'''
+este comando baixa todas as dependencias do projeto
 
-## Build
+## Para a aplicação foi utilizado:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
++[Node](https://nodejs.org/en/)
+	-A versão mais recente
++[Angular 12](https://angular.io)
+	-Versão 12.1.1 CLI
++[Angular Material](https://material.angular.io)
+	-A versão mais recente
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para executar o projeto basta digitar o comanto ng serve e esperar o projeto compilar e para acessar o projeto basta navegar para o caminho http://localhost:4200/ no navegador.
