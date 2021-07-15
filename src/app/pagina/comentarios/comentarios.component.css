@@ -1,8 +1,11 @@
 .flex-box {
+    
+    width: 100vw;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    
 }
 
 .example-header-image {

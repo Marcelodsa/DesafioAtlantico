@@ -1,18 +1,21 @@
 
-body{
+.div{
     font-family: sans-serif;
     max-width: 100%;
-    height: fit-content;
-    display: block;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: no-repeat center;
-    background-color: #c0c0c0;
+    background-size: contain;
+    background-color: #EEEEEE;
 }
 
 .img{
-    width: 50px; 
+    margin: 8px;
+    
     height: 50px;
 }
 
@@ -50,7 +53,7 @@ a:hover {
 }
 
 .menu{
-    background-color: #00B2A9;
+    background-color: #2196F3;
     color: #f5f5f5;
     justify-content: right;
     max-width: 100%;
