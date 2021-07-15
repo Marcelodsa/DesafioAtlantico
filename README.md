@@ -9,22 +9,29 @@ O projeta obtem os dados das publicações através de chamas de API para o JSON
 ## Instalando dependencias do projeto
 
 Primeiro deve-se instalar o +[Node](https://nodejs.org/en/) em sua máquina.
+
 Segundo deve-se instalar o +[Angular 12](https://angular.io), pode-se instalar através do comando
-'''
+
+```bash
 npm install -g @angular/cli
-'''
+```
+
 E por ultimo, apos ter baixado o projeto, caminha com o terminal ate a pasta do projeto e rode o comando
-'''
+
+```bash
 npm i
-'''
+```
+
 este comando baixa todas as dependencias do projeto
 
 ## Para a aplicação foi utilizado:
 
 +[Node](https://nodejs.org/en/)
 	-A versão mais recente
+
 +[Angular 12](https://angular.io)
 	-Versão 12.1.1 CLI
+
 +[Angular Material](https://material.angular.io)
 	-A versão mais recente
 
